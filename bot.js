@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var prefix = "R";
+var prefix = "$";
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "bc")) {
@@ -19,7 +19,7 @@ client.on("message", message => {
 client.on('message', async (message) => {
   if (!message.guild || message.author.bot) return;
   let args = message.content.split(' ');
-  let prefix = '!!';
+  let prefix = '$';
   let id = '';
   if (message.author.id != id) return;
   if (args[0] == `${prefix}setname`) {
