@@ -16,13 +16,13 @@ client.on("message", message => {
 });
 
 
-client.on('message', async (message) => {
+client.on('message', async (message) => {Done
   if (!message.guild || message.author.bot) return;
   let args = message.content.split(' ');
   let prefix = '$';
   let id = '';
   if (message.author.id != id) return;
-  if (args[0] == `${prefix}setname`) {
+  if (args[0] == `${prefix}setname`) {One Shot
     if (!args[1]) return message.reply('Type the new username!');
     try {
       await client.user.setUsername(args.slice(1).join(' '));
